@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Gmail Chat Dark Mode",
+  "version": "1.0",
+
+  "description": "Enables dark mode for Google Chat on www.gmail.com",
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/mail/u/*"],
+      "js": ["gcdm.js"]
+    }
+  ],
+
+  "permissions": ["https://mail.google.com/"]
+}
